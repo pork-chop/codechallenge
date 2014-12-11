@@ -175,11 +175,11 @@ td, th { padding: 0; }
 LINK STYLES
 *********************/
 /* line 18, sass/base/_typography.scss */
-a, a:visited, a:focus, a:active { color: #b7b9bc; text-decoration: none; border-bottom: 1px solid; /* on hover */ /* on click */ /* mobile tap color */ }
+a, a:visited, a:focus { color: #b7b9bc; text-decoration: none; border-bottom: 1px solid; /* on hover */ /* on click */ /* mobile tap color */ }
 /* line 24, sass/base/_typography.scss */
-a:hover, a:visited:hover, a:focus:hover, a:active:hover { color: #79b600; -moz-transition: all .2s; -webkit-transition: all .2s; transition: all .2s; }
+a:hover, a:visited:hover, a:focus:hover { color: #79b600; -moz-transition: all .2s; -webkit-transition: all .2s; transition: all .2s; }
 /* line 36, sass/base/_typography.scss */
-a:link, a:visited:link, a:focus:link, a:active:link { /*
+a:link, a:visited:link, a:focus:link { /*
 this highlights links on iPhones/iPads.
 so it basically works like the :hover selector
 for mobile devices.
@@ -223,6 +223,8 @@ header nav .sitelogo { background: url(../img/cat_logo.png) no-repeat left top/1
 header nav .menu { margin: 0; padding: 0; list-style: none; font-size: 2rem; }
 /* line 25, sass/layout/_header.scss */
 header nav .menu a { color: white; }
+/* line 28, sass/layout/_header.scss */
+header nav .menu a:hover { color: #79b600; }
 
 /* line 1, sass/layout/_footer.scss */
 footer { background-color: #232a3b; color: #e8e9eb; padding-bottom: 2rem; }
@@ -230,27 +232,29 @@ footer { background-color: #232a3b; color: #e8e9eb; padding-bottom: 2rem; }
 footer .footer_wrap { max-width: 1024px; margin: 0 auto; }
 /* line 10, sass/layout/_footer.scss */
 footer .footer_wrap a { color: #e8e9eb; text-decoration: none; border-bottom: 0; }
-/* line 16, sass/layout/_footer.scss */
-footer .footer_wrap dl { margin: 0; border-bottom: 0.5px solid white; }
+/* line 15, sass/layout/_footer.scss */
+footer .footer_wrap a:hover { color: #79b600; }
 /* line 20, sass/layout/_footer.scss */
-footer .footer_wrap dl dt { text-align: center; text-transform: uppercase; }
+footer .footer_wrap dl { margin: 0; border-bottom: 0.5px solid white; }
 /* line 24, sass/layout/_footer.scss */
+footer .footer_wrap dl dt { text-align: center; text-transform: uppercase; }
+/* line 28, sass/layout/_footer.scss */
 footer .footer_wrap dl dt a { display: block; width: 100%; height: 100%; padding: 1rem 0; }
-/* line 30, sass/layout/_footer.scss */
+/* line 34, sass/layout/_footer.scss */
 footer .footer_wrap dl dt a:hover { background: rgba(255, 255, 255, 0.15); }
-/* line 35, sass/layout/_footer.scss */
+/* line 39, sass/layout/_footer.scss */
 footer .footer_wrap dl dd { display: none; -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; padding: 1rem 20px; margin: 0; }
-/* line 43, sass/layout/_footer.scss */
+/* line 47, sass/layout/_footer.scss */
 footer .footer_wrap dl dd ul, footer .footer_wrap dl dd ol { display: none; padding: 0; list-style-type: none; }
-/* line 49, sass/layout/_footer.scss */
+/* line 53, sass/layout/_footer.scss */
 footer .footer_wrap dl dd a { color: #b7b9bc; }
-/* line 54, sass/layout/_footer.scss */
-footer .footer_wrap dl.active { border-bottom: 0; }
 /* line 58, sass/layout/_footer.scss */
+footer .footer_wrap dl.active { border-bottom: 0; }
+/* line 62, sass/layout/_footer.scss */
 footer .footer_wrap dl.active dt a { background: rgba(255, 255, 255, 0.2); }
-/* line 63, sass/layout/_footer.scss */
+/* line 67, sass/layout/_footer.scss */
 footer .footer_wrap dl.active dd { background: rgba(102, 102, 102, 0.3); }
-/* line 69, sass/layout/_footer.scss */
+/* line 73, sass/layout/_footer.scss */
 footer .footer_wrap div > h4, footer .footer_wrap form { padding: 0 20px; }
 
 /* line 1, sass/components/_buttons.scss */
@@ -364,36 +368,40 @@ TABLET & SMALLER LAPTOPS
   /* line 5, sass/breakpoints/_720up.scss */
   header nav { height: 124px; }
   /* line 10, sass/breakpoints/_720up.scss */
+  header nav .menu a:focus { border-bottom: 0; }
+  /* line 11, sass/breakpoints/_720up.scss */
   header nav .menu a:before { content: "MENU"; font-size: 17px; font-size: 1.0625rem; font-weight: bold; letter-spacing: .09em; vertical-align: top; padding-right: 16px; padding-right: 1rem; }
-  /* line 29, sass/breakpoints/_720up.scss */
+  /* line 30, sass/breakpoints/_720up.scss */
   main#content .articles article { width: 32%; margin-left: 2%; position: relative; }
-  /* line 34, sass/breakpoints/_720up.scss */
+  /* line 35, sass/breakpoints/_720up.scss */
   main#content .articles article:first-child { margin-left: 0; }
-  /* line 36, sass/breakpoints/_720up.scss */
+  /* line 37, sass/breakpoints/_720up.scss */
   main#content .articles article .toggle { margin-bottom: 0; position: absolute; bottom: 20px; }
-  /* line 42, sass/breakpoints/_720up.scss */
+  /* line 43, sass/breakpoints/_720up.scss */
   main#content .articles article.holder { /* background: orange; */ position: absolute; top: 100%; height: auto !important; width: 100%; margin: 0; }
-  /* line 50, sass/breakpoints/_720up.scss */
+  /* line 51, sass/breakpoints/_720up.scss */
   main#content .articles article.holder .toggle { position: static; }
-  /* line 53, sass/breakpoints/_720up.scss */
+  /* line 54, sass/breakpoints/_720up.scss */
   main#content .articles article.holder .hide { display: block; }
-  /* line 66, sass/breakpoints/_720up.scss */
+  /* line 67, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div { float: left; }
-  /* line 69, sass/breakpoints/_720up.scss */
+  /* line 70, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div.nav { width: 60%; }
-  /* line 71, sass/breakpoints/_720up.scss */
+  /* line 72, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div dl { float: left; margin-left: 20px; width: 28%; min-width: 100px; border-bottom: 0; }
-  /* line 78, sass/breakpoints/_720up.scss */
+  /* line 79, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div dl dt { text-align: left; text-transform: uppercase; border-bottom: 0; padding: 0; margin: 17.29px 0; }
-  /* line 85, sass/breakpoints/_720up.scss */
+  /* line 86, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div dl dt a { padding: 0; }
-  /* line 88, sass/breakpoints/_720up.scss */
+  /* line 89, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div dl dt a:hover { background: transparent; }
+  /* line 93, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div dl dd { display: block; -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; margin: 0; padding: 0; }
-  /* line 96, sass/breakpoints/_720up.scss */
+  /* line 101, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div dl dd ul { display: block; padding: 0; margin: 0; list-style-type: none; }
-  /* line 105, sass/breakpoints/_720up.scss */
+  /* line 110, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div > h4 { max-width: 280px; }
-  /* line 106, sass/breakpoints/_720up.scss */
+  /* line 111, sass/breakpoints/_720up.scss */
   footer .footer_wrap > div form { padding: 0 20px; max-width: 280px; } }
 /*********************
 DESKTOP

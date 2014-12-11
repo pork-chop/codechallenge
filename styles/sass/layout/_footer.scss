@@ -11,6 +11,10 @@ footer {
 			color: $lightgreytext;
 			text-decoration: none;
 			border-bottom: 0;
+			
+			&:hover {
+				color: $link-hover;
+			}
 		}
 	
 		dl {

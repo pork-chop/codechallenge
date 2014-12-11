@@ -7,6 +7,7 @@ header {
 	
 		.menu {
 			a {
+				&:focus { border-bottom: 0; }
 				&:before {
 					content: "MENU";
 					font-size: 17px;
@@ -82,7 +83,11 @@ footer {
 					padding: 0;
 					margin: 17.29px 0; 
 					
-					a { padding: 0; }
+					a { 
+						padding: 0; 
+						
+						&:hover { background: transparent; }
+					}
 				}
 			
 				dd {
