@@ -1,0 +1,56 @@
+/***
+Site Name: Code Challenge for Amy Dalrymple
+Author: Amy Dalrymple
+***/
+
+/*********************
+IMPORTING PARTIALS
+*********************/
+
+// Normalize: http://necolas.github.io/normalize.css/
+@import "base/normalize";
+
+// Set up typography & variables
+@import "helpers/variables";
+@import "base/typography";
+
+// Set up grid & layout
+@import "layout/header";
+@import "layout/footer";
+
+// Misc layout elements
+@import "components/buttons";
+@import "layout/forms";
+@import "helpers/helpers";
+
+/*********************
+BASE (MOBILE) SIZE
+*********************/
+// styles in base.scss
+@import "breakpoints/base";
+
+/*********************
+LARGER MOBILE DEVICES
+*********************/
+@media only screen and (min-width: 350px) {
+	@import "breakpoints/350up";
+}
+@media only screen and (min-width: 480px) {
+	@import "breakpoints/480up";
+}
+
+/*********************
+TABLET & SMALLER LAPTOPS
+*********************/
+@media only screen and (min-width: 720px) {
+	// styles in 720up.scss
+	@import "breakpoints/720up";
+}
+
+/*********************
+DESKTOP
+*********************/
+@media only screen and (min-width: 1440px) {
+	// styles in 1440up.scss
+	@import "breakpoints/1440up";
+}

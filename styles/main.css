@@ -1,0 +1,400 @@
+/***
+Site Name: Code Challenge for Amy Dalrymple
+Author: Amy Dalrymple
+***/
+/*********************
+IMPORTING PARTIALS
+*********************/
+/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+/* line 9, sass/base/_normalize.scss */
+html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/** Remove default margin. */
+/* line 19, sass/base/_normalize.scss */
+body { margin: 0; }
+
+/* HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
+/* line 45, sass/base/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/** 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
+/* line 57, sass/base/_normalize.scss */
+audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+/* line 67, sass/base/_normalize.scss */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
+/* line 78, sass/base/_normalize.scss */
+[hidden], template { display: none; }
+
+/* Links ========================================================================== */
+/** Remove the gray background color from active links in IE 10. */
+/* line 89, sass/base/_normalize.scss */
+a { background-color: transparent; }
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+/* line 98, sass/base/_normalize.scss */
+a:active, a:hover { outline: 0; }
+
+/* Text-level semantics ========================================================================== */
+/** Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+/* line 109, sass/base/_normalize.scss */
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+/* line 118, sass/base/_normalize.scss */
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari and Chrome. */
+/* line 126, sass/base/_normalize.scss */
+dfn { font-style: italic; }
+
+/** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari, and Chrome. */
+/* line 135, sass/base/_normalize.scss */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/** Address styling not present in IE 8/9. */
+/* line 144, sass/base/_normalize.scss */
+mark { background: #ff0; color: #000; }
+
+/** Address inconsistent and variable font size in all browsers. */
+/* line 153, sass/base/_normalize.scss */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+/* line 162, sass/base/_normalize.scss */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+/* line 169, sass/base/_normalize.scss */
+sup { top: -0.5em; }
+
+/* line 173, sass/base/_normalize.scss */
+sub { bottom: -0.25em; }
+
+/* Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9/10. */
+/* line 184, sass/base/_normalize.scss */
+img { border: 0; }
+
+/** Correct overflow not hidden in IE 9/10/11. */
+/* line 192, sass/base/_normalize.scss */
+svg:not(:root) { overflow: hidden; }
+
+/* Grouping content ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari. */
+/* line 203, sass/base/_normalize.scss */
+figure { margin: 1em 40px; }
+
+/** Address differences between Firefox and other browsers. */
+/* line 211, sass/base/_normalize.scss */
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+
+/** Contain overflow in all browsers. */
+/* line 221, sass/base/_normalize.scss */
+pre { overflow: auto; }
+
+/** Address odd `em`-unit font size rendering in all browsers. */
+/* line 232, sass/base/_normalize.scss */
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+
+/* Forms ========================================================================== */
+/** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
+/** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+/* line 256, sass/base/_normalize.scss */
+button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address `overflow` set to `hidden` in IE 8/9/10/11. */
+/* line 266, sass/base/_normalize.scss */
+button { overflow: visible; }
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera. Correct `select` style inheritance in Firefox. */
+/* line 278, sass/base/_normalize.scss */
+button, select { text-transform: none; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+/* line 293, sass/base/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+/* line 303, sass/base/_normalize.scss */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** Remove inner padding and border in Firefox 4+. */
+/* line 312, sass/base/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+/* line 322, sass/base/_normalize.scss */
+input { line-height: normal; }
+
+/** It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width.  1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. */
+/* line 335, sass/base/_normalize.scss */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
+/* line 347, sass/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof). */
+/* line 357, sass/base/_normalize.scss */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
+
+/** Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
+/* line 371, sass/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Define consistent border, margin, and padding. */
+/* line 379, sass/base/_normalize.scss */
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/** 1. Correct `color` not being inherited in IE 8/9/10/11. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+/* line 390, sass/base/_normalize.scss */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** Remove default vertical scrollbar in IE 8/9/10/11. */
+/* line 399, sass/base/_normalize.scss */
+textarea { overflow: auto; }
+
+/** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+/* line 408, sass/base/_normalize.scss */
+optgroup { font-weight: bold; }
+
+/* Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+/* line 419, sass/base/_normalize.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 425, sass/base/_normalize.scss */
+td, th { padding: 0; }
+
+/*********************
+LINK STYLES
+*********************/
+/* line 18, sass/base/_typography.scss */
+a, a:visited, a:focus, a:active { color: #b7b9bc; text-decoration: none; border-bottom: 1px solid; /* on hover */ /* on click */ /* mobile tap color */ }
+/* line 24, sass/base/_typography.scss */
+a:hover, a:visited:hover, a:focus:hover, a:active:hover { color: #79b600; -moz-transition: all .2s; -webkit-transition: all .2s; transition: all .2s; }
+/* line 36, sass/base/_typography.scss */
+a:link, a:visited:link, a:focus:link, a:active:link { /*
+this highlights links on iPhones/iPads.
+so it basically works like the :hover selector
+for mobile devices.
+*/ -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+/* line 51, sass/base/_typography.scss */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { text-rendering: optimizelegibility; font-weight: 500; /* removing text decoration from all headline links */ }
+/* line 56, sass/base/_typography.scss */
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a { text-decoration: none; border-bottom: 0; }
+
+/* line 62, sass/base/_typography.scss */
+h1, .h1 { font-size: 32px; font-size: 2rem; }
+
+/* line 67, sass/base/_typography.scss */
+h2, .h2, h3, .h3 { font-size: 18px; font-size: 1.125rem; font-weight: 400; }
+
+/* line 76, sass/base/_typography.scss */
+h3, .h3 { text-transform: uppercase; }
+
+/* line 80, sass/base/_typography.scss */
+h4, .h4 { font-size: 13px; font-size: .8125rem; font-weight: 300; letter-spacing: .125em; }
+
+/******************************************************************
+MISC TEXT STYLES
+******************************************************************/
+/* line 91, sass/base/_typography.scss */
+.intro { font-size: 18px; font-size: 1.125rem; }
+
+/* line 1, sass/layout/_header.scss */
+header { background: url(../img/kitty_banner.jpg) no-repeat -25px top/auto 100% #bcbcbc; height: 324px; text-align: center; color: white; padding: 25px 20px; }
+/* line 8, sass/layout/_header.scss */
+header a { color: white; border-bottom: 0; }
+/* line 10, sass/layout/_header.scss */
+header nav { height: 124px; }
+/* line 13, sass/layout/_header.scss */
+header nav .sitelogo { background: url(../img/cat_logo.png) no-repeat left top/100% auto transparent; width: 136px; height: 24px; }
+/* line 19, sass/layout/_header.scss */
+header nav .menu { margin: 0; padding: 0; list-style: none; font-size: 2rem; }
+/* line 25, sass/layout/_header.scss */
+header nav .menu a { color: white; }
+
+/* line 1, sass/layout/_footer.scss */
+footer { background-color: #232a3b; color: #e8e9eb; padding-bottom: 2rem; }
+/* line 6, sass/layout/_footer.scss */
+footer .footer_wrap { max-width: 1024px; margin: 0 auto; }
+/* line 10, sass/layout/_footer.scss */
+footer .footer_wrap a { color: #e8e9eb; text-decoration: none; border-bottom: 0; }
+/* line 16, sass/layout/_footer.scss */
+footer .footer_wrap dl { margin: 0; border-bottom: 0.5px solid white; }
+/* line 20, sass/layout/_footer.scss */
+footer .footer_wrap dl dt { text-align: center; text-transform: uppercase; }
+/* line 24, sass/layout/_footer.scss */
+footer .footer_wrap dl dt a { display: block; width: 100%; height: 100%; padding: 1rem 0; }
+/* line 30, sass/layout/_footer.scss */
+footer .footer_wrap dl dt a:hover { background: rgba(255, 255, 255, 0.15); }
+/* line 35, sass/layout/_footer.scss */
+footer .footer_wrap dl dd { display: none; -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; padding: 1rem 20px; margin: 0; }
+/* line 43, sass/layout/_footer.scss */
+footer .footer_wrap dl dd ul, footer .footer_wrap dl dd ol { display: none; padding: 0; list-style-type: none; }
+/* line 49, sass/layout/_footer.scss */
+footer .footer_wrap dl dd a { color: #b7b9bc; }
+/* line 54, sass/layout/_footer.scss */
+footer .footer_wrap dl.active { border-bottom: 0; }
+/* line 58, sass/layout/_footer.scss */
+footer .footer_wrap dl.active dt a { background: rgba(255, 255, 255, 0.2); }
+/* line 63, sass/layout/_footer.scss */
+footer .footer_wrap dl.active dd { background: rgba(102, 102, 102, 0.3); }
+/* line 69, sass/layout/_footer.scss */
+footer .footer_wrap div > h4, footer .footer_wrap form { padding: 0 20px; }
+
+/* line 1, sass/components/_buttons.scss */
+button, .button, input[type="button"], input[type="submit"] { background-color: #79b600; color: white; text-decoration: none; border-bottom: 0; padding: .5rem 2rem; border-radius: 3.42px; border: 0; font-weight: 100; letter-spacing: .125em; }
+/* line 12, sass/components/_buttons.scss */
+button:visited, .button:visited, input[type="button"]:visited, input[type="submit"]:visited { color: white; }
+/* line 16, sass/components/_buttons.scss */
+button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus { color: #79b600; background-color: #355000; -moz-transition: all .2s; -webkit-transition: all .2s; transition: all .2s; }
+
+/* line 3, sass/layout/_forms.scss */
+fieldset label { color: #232a3b; background-color: white; display: block; width: 100%; margin-bottom: .875rem; padding: .5rem; font-size: 13px; font-size: .8125rem; }
+/* line 14, sass/layout/_forms.scss */
+fieldset input[type="text"], fieldset input[type="email"] { padding: .5rem; border: 0; }
+
+/* line 1, sass/helpers/_helpers.scss */
+.left { float: left; }
+
+/* line 4, sass/helpers/_helpers.scss */
+.right { float: right; }
+
+/* line 8, sass/helpers/_helpers.scss */
+.hide { display: none; }
+
+/* line 10, sass/helpers/_helpers.scss */
+.hidetext { text-indent: 100%; white-space: nowrap; overflow: hidden; }
+/* line 15, sass/helpers/_helpers.scss */
+.hidetext > a { display: block; height: 100%; width: 100%; }
+
+/* line 22, sass/helpers/_helpers.scss */
+.cf:before, .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
+
+/* line 27, sass/helpers/_helpers.scss */
+.cf:after { clear: both; }
+
+/* line 31, sass/helpers/_helpers.scss */
+.cf { *zoom: 1; }
+
+/*********************
+BASE (MOBILE) SIZE
+*********************/
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* line 2, sass/breakpoints/_base.scss */
+html { box-sizing: border-box; }
+
+/* line 5, sass/breakpoints/_base.scss */
+*, *:before, *:after { box-sizing: inherit; }
+
+/*********************
+GENERAL STYLES
+*********************/
+/* line 12, sass/breakpoints/_base.scss */
+html { font-size: 16px; font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; line-height: 1.5rem; }
+
+/* line 19, sass/breakpoints/_base.scss */
+body { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-size: 1rem; color: #434951; background-color: white; -webkit-font-smoothing: antialiased; position: relative; }
+
+/*********************
+CONTENT SECTIONS
+*********************/
+/* line 34, sass/breakpoints/_base.scss */
+main#content { padding: 35px 20px; max-width: 1022px; margin: 0 auto; }
+/* line 39, sass/breakpoints/_base.scss */
+main#content .articles { position: relative; }
+/* line 42, sass/breakpoints/_base.scss */
+main#content .articles article { border: 1px solid #c3c8c9; padding: 20px; padding-bottom: 36px; padding-bottom: calc(20px + 1rem); border-top-width: 5px; margin-bottom: 35px; }
+/* line 50, sass/breakpoints/_base.scss */
+main#content .articles article.green_top { border-top-color: #79b600; }
+/* line 51, sass/breakpoints/_base.scss */
+main#content .articles article.blue_top { border-top-color: #aedee4; }
+/* line 52, sass/breakpoints/_base.scss */
+main#content .articles article.pink_top { border-top-color: #fdd7f5; }
+/* line 56, sass/breakpoints/_base.scss */
+main#content .articles article.holder .hide { display: block; font-weight: 300; }
+/* line 59, sass/breakpoints/_base.scss */
+main#content .articles article .date { color: #b7b9bc; text-transform: uppercase; font-size: 12px; font-size: .75rem; font-weight: 600; letter-spacing: .09em; }
+/* line 72, sass/breakpoints/_base.scss */
+main#content section .substory { width: 100%; margin-bottom: 35px; }
+/* line 76, sass/breakpoints/_base.scss */
+main#content section .substory img { display: block; width: 100%; margin-bottom: 35px; }
+/* line 82, sass/breakpoints/_base.scss */
+main#content section .substory > div h3 { margin-top: 0; letter-spacing: .05em; }
+/* line 84, sass/breakpoints/_base.scss */
+main#content section .substory p { font-weight: 300; letter-spacing: .035em; }
+/* line 87, sass/breakpoints/_base.scss */
+main#content section .substory:nth-of-type(2) img { margin-right: 5%; }
+/* line 88, sass/breakpoints/_base.scss */
+main#content section .substory:nth-of-type(2) > div { float: left; }
+
+/*********************
+LARGER MOBILE DEVICES
+*********************/
+@media only screen and (min-width: 350px) { /* line 5, sass/breakpoints/_350up.scss */
+  main#content section .substory { width: 100%; }
+  /* line 8, sass/breakpoints/_350up.scss */
+  main#content section .substory img { width: 40%; }
+  /* line 12, sass/breakpoints/_350up.scss */
+  main#content section .substory div { width: 55%; } }
+@media only screen and (min-width: 480px) { /* line 5, sass/breakpoints/_480up.scss */
+  main#content section .substory { width: 100%; }
+  /* line 8, sass/breakpoints/_480up.scss */
+  main#content section .substory img { width: 25%; max-width: 260px; }
+  /* line 13, sass/breakpoints/_480up.scss */
+  main#content section .substory div { width: 65%; }
+  /* line 24, sass/breakpoints/_480up.scss */
+  footer .footer_wrap dl dd { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; } }
+/*********************
+TABLET & SMALLER LAPTOPS
+*********************/
+@media only screen and (min-width: 720px) { /* line 1, sass/breakpoints/_720up.scss */
+  header { background-size: 100% auto; background-position: left top; }
+  /* line 5, sass/breakpoints/_720up.scss */
+  header nav { height: 124px; }
+  /* line 10, sass/breakpoints/_720up.scss */
+  header nav .menu a:before { content: "MENU"; font-size: 17px; font-size: 1.0625rem; font-weight: bold; letter-spacing: .09em; vertical-align: top; padding-right: 16px; padding-right: 1rem; }
+  /* line 29, sass/breakpoints/_720up.scss */
+  main#content .articles article { width: 32%; margin-left: 2%; position: relative; }
+  /* line 34, sass/breakpoints/_720up.scss */
+  main#content .articles article:first-child { margin-left: 0; }
+  /* line 36, sass/breakpoints/_720up.scss */
+  main#content .articles article .toggle { margin-bottom: 0; position: absolute; bottom: 20px; }
+  /* line 42, sass/breakpoints/_720up.scss */
+  main#content .articles article.holder { /* background: orange; */ position: absolute; top: 100%; height: auto !important; width: 100%; margin: 0; }
+  /* line 50, sass/breakpoints/_720up.scss */
+  main#content .articles article.holder .toggle { position: static; }
+  /* line 53, sass/breakpoints/_720up.scss */
+  main#content .articles article.holder .hide { display: block; }
+  /* line 66, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div { float: left; }
+  /* line 69, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div.nav { width: 60%; }
+  /* line 71, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div dl { float: left; margin-left: 20px; width: 28%; min-width: 100px; border-bottom: 0; }
+  /* line 78, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div dl dt { text-align: left; text-transform: uppercase; border-bottom: 0; padding: 0; margin: 17.29px 0; }
+  /* line 85, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div dl dt a { padding: 0; }
+  /* line 88, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div dl dd { display: block; -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; margin: 0; padding: 0; }
+  /* line 96, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div dl dd ul { display: block; padding: 0; margin: 0; list-style-type: none; }
+  /* line 105, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div > h4 { max-width: 280px; }
+  /* line 106, sass/breakpoints/_720up.scss */
+  footer .footer_wrap > div form { padding: 0 20px; max-width: 280px; } }
+/*********************
+DESKTOP
+*********************/

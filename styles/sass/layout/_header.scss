@@ -1,0 +1,31 @@
+header {
+	background: url(../img/kitty_banner.jpg) no-repeat -25px top / auto 100% #bcbcbc;
+	height: 324px;
+	text-align: center;
+	color: $white;
+	padding: 25px 20px;
+	
+	a { color: $white; border-bottom: 0; }
+	
+	nav {
+		height: 124px;
+	
+		.sitelogo {
+			background: url(../img/cat_logo.png) no-repeat left top / 100% auto transparent;
+			width: 136px;
+			height: 24px;
+		}
+		
+		.menu {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: 2rem;
+			
+			a {
+				color: $white;
+			}
+		}
+	
+	}
+}

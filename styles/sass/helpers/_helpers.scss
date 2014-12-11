@@ -1,0 +1,33 @@
+.left {
+	float: left;
+}
+.right {	
+	float: right;
+}
+
+.hide { display: none; }
+
+.hidetext {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	
+	> a {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
