@@ -82,6 +82,10 @@ $(function() {
 	
 	toggleFooterNav();
 	
+	$('#menu').on('click', function() {
+	    alert('If this menu had any content, it would expand to display the proper links.');
+	});
+	
 	$(window).resize(function() {
 		windowWidth = $(window).width();
 

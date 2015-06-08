@@ -20,14 +20,25 @@ header {
 			margin: 0;
 			padding: 0;
 			list-style: none;
-			font-size: 2rem;
+			font-size: 0.875rem;
+			min-height: 20px;
 			
-			a {
+			li { display: inline-block; }
+			
+			button {
+    			background: transparent url(../img/icon-menu-light.svg) no-repeat right -5px;
+    			background-size: contain;
+    			border: 0;
 				color: $white;
+				font-weight: 400;
+				padding: 12px;
+    			text-transform: uppercase;
 
 				&:hover {
 					color: $link-hover;
 				}
+				
+				span { display: none; }
 			}
 		}
 	
